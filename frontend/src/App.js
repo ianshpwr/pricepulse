@@ -22,7 +22,6 @@ function App() {
 
       const data = await response.json();
       alert("Backend Response: " + data.message);
-      // Reset form on success
       setProductUrl('');
       setTargetPrice('');
     } catch (error) {

@@ -14,13 +14,8 @@ def track_price():
 
     url = data.get("url")
     target_price = data.get("targetPrice")
-
-    # For now, just print/log the received data
     print(f"Received URL: {url}")
     print(f"Target Price: {target_price}")
-
-    # You could later add scraping and price checking logic here
-
     return jsonify({"message": "Product tracking info received!"})
 
 if __name__ == "__main__":
